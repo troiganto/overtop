@@ -2,15 +2,16 @@ Some hints on how to get this thing running.
 
 First of all, you need node.js installed (http://nodejs.org/).
 
-Then, you need a Webserver (like WAMP, http://www.wampserver.com/en/). Drop the repo's content on the webservers DocumentRoot. Then, open a command line in that directory.
-
-Run
+Then, run
  $ npm install
  $ npm install -g grunt-cli
-in that directory to automatically install dependencies (compiler and toolchain).
+in the project root folder (the folder where this file lies) to automatically install dependencies (compiler and toolchain).
 
 Then, run
  $ grunt
 to build the project.
 
-Now, head to http://localhost/ in your web browser. If no errors occured, you should be ready to go and also have a working development environment.
+Launch the webserver required for file hosting with
+ $ node server.js
+
+Now, head to http://localhost:888/ in your web browser. If no errors occured, you should be ready to go and also have a working development environment.
