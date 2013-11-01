@@ -14,4 +14,4 @@ to build the project.
 Launch the webserver required for file hosting with
  $ node server.js
 
-Now, head to http://localhost:888/ in your web browser. If no errors occured, you should be ready to go and also have a working development environment.
+Now, head to http://localhost:8888/ in your web browser. If no errors occured, you should be ready to go and also have a working development environment.
