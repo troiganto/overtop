@@ -5,6 +5,8 @@
     "grunt": "~0.4.1",
     "typescript": "~0.9.1",
     "grunt-ts": "~1.4.0",
-    "express": "~3.4.4"
+    "express": "~3.4.4",
+    "yuidocjs": "~0.3.46",
+    "grunt-contrib-yuidoc": "*"
   }
 }
