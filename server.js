@@ -15,3 +15,4 @@ app.get("/", function(req,res){
 
 // Start the server.
 app.listen(8888);
+console.log("Server is up and running on http://localhost:8888");
