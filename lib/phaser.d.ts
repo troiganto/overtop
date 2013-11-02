@@ -252,7 +252,7 @@ declare module Phaser {
       }
 
       class Game {
-            constructor(width: number, height: number, renderer: number, parent: string, state: Phaser.StateManager, transparent: boolean, antialias: boolean);
+            constructor(width: number, height: number, renderer: number, parent: string, state: Phaser.State, transparent: boolean, antialias: boolean);
             id: number;
             width: number;
             height: number;
