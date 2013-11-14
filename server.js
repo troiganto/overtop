@@ -4,14 +4,11 @@ var app = express();
 
 
 // Expose /assets, /scripts and /lib just like an ordinary webserver would do.
+// Use /htmlpub for / to prevent exposure of internal files.
 app.use("/assets", express.static("assets"));
 app.use("/scripts", express.static("scripts"));
 app.use("/lib", express.static("lib"));
-
-// Give anybody navigating to our website root the game page.
-app.get("/", function(req,res){
-  res.sendfile("index.html");
-});
+app.use("/", express.static("htmlpub"));
 
 // Start the server.
 app.listen(8888);
