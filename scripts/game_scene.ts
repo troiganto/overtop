@@ -2,7 +2,7 @@
 
 import PhaserModule = Phaser;
 
-module Game {
+module Overtop {
   /**
    * This class handles the stage in which the main game takes place - a level is
    * displayed and a character is shown and can be moved.
@@ -10,7 +10,7 @@ module Game {
    * @class GameStage
    * @constructor
    */
-  export class GameStage extends PhaserModule.State {
+  export class GameScene extends PhaserModule.State {
 
     private map: Phaser.Tilemap;
     private layer: Phaser.TilemapLayer;
