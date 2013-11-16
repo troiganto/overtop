@@ -11,5 +11,3 @@ tscommand.tmp.txt
 
 # generated on build, does not need to be included for now and is defunct anyway
 docs
-
-*.bat

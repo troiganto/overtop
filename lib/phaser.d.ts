@@ -1,6 +1,5 @@
 declare class Phaser {
       static VERSION: string;
-      static DEV_VERSION: string;
       static GAMES: Array;
       static AUTO: number;
       static CANVAS: number;
@@ -253,7 +252,7 @@ declare module Phaser {
       }
 
       class Game {
-            constructor(width: number, height: number, renderer: number, parent: string, state: object, transparent: boolean, antialias: boolean);
+            constructor(width: number, height: number, renderer: number, parent: string, state: Phaser.State, transparent: boolean, antialias: boolean);
             id: number;
             width: number;
             height: number;
