@@ -1,12 +1,27 @@
-//small example to debug JS/TS errors.
-    var map;
+///<reference path="../lib/phaser.d.ts"/>
+
+import PhaserModule = Phaser;
+
+module Game {
+  /**
+   * This class handles the stage in which the main game takes place - a level is
+   * displayed and a character is shown and can be moved.
+   *
+   * @class GameStage
+   * @constructor
+   */
+  export class GameStage extends PhaserModule.State {
+
+    private map: Phaser.Tilemap;
+    private layer: Phaser.TilemapLayer;
+    private renderer: Phaser.TilemapRenderer;
 
     /**
      * Handles loading of necessary files, as usual per Phaser.io standard.
      * @method preload
      * @return{void}
      */
-    function preload()
+    preload(): void
     {
       game.load.tilemap("tilemap", "assets/maps/testmap.json", null, Phaser.Tilemap.TILED_JSON);
       game.load.tileset("tileset", "assets/maps/tileset.png", 16,16,-1,0,0);
@@ -17,11 +32,12 @@
      * @method create
      * @return{void}
      */
-    function create()
+    create(): void
     {
-      map = game.add.tilemap("tilemap");
+      this.map = game.add.tilemap("tilemap");
       var tileset = game.add.tileset("tileset");
-      game.add.tilemapLayer(0, 0, 640, 480, tileset, map, 0);
+
+      this.layer = game.add.tilemapLayer(0, 0, 640,480, tileset, this.map, 0);
     }
     
     /**
@@ -29,10 +45,11 @@
      * @method update
      * @return{void}
      */
-    function update()
+    update(): void
     {
 
     }
 
-    var game = new Phaser.Game(640, 480, Phaser.AUTO, 'gamearea', {preload:preload,create:create,update:update}, false, false);
-    
+  }
+
+}

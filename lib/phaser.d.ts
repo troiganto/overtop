@@ -1406,6 +1406,11 @@ declare module Phaser {
             dataLoadError(key: string): void;
             xmlLoadComplete(key: string): void;
             nextFile(previousKey: string, success: boolean): void;
+            
+            // BEGIN modifications
+            tilemap(key: string, file: string, tileset:string);
+            tileset(key: string, file: string, a:number, b:number, c:number, d:number, e:number);
+            // END modifications
       }
 
       module Loader {
