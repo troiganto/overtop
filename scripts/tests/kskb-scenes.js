@@ -1,5 +1,5 @@
 //small example to debug JS/TS errors.
-    var map, renderer;
+    var map;
 
     /**
      * Handles loading of necessary files, as usual per Phaser.io standard.
@@ -9,7 +9,7 @@
     function preload()
     {
       game.load.tilemap("tilemap", "assets/maps/testmap.tmx", "assets/maps/zelda la tileset.png");
-      game.load.tileset("tileset", "assets/maps/zelda la tileset.png", 18,18,-1,1,1);
+      game.load.tileset("tileset", "assets/maps/zelda la tileset.png", 5,5,-1,1,1);
     }
     
     /**
@@ -21,7 +21,7 @@
     {
       map = game.add.tilemap(0,0,"tilemap", false, 18, 18);
       var tileset = game.add.tileset("tileset");
-      game.add.tilemapLayer(0, 0, map.widthInPixels, map.heightInPixels,
+      game.add.tilemapLayer(0, 0, 640, 480,
       tileset, map, 0);
     }
     
