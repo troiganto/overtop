@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="34" height="41" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="minimal" tilewidth="32" tileheight="32" spacing="1">
+  <image source="../tilesets/minimal.png" width="165" height="99"/>
+  <terraintypes>
+   <terrain name="Void" tile="-1"/>
+   <terrain name="Room" tile="-1"/>
+   <terrain name="Elevated" tile="-1"/>
+  </terraintypes>
+  <tile id="0" terrain=",,,1"/>
+  <tile id="1" terrain=",,1,"/>
+  <tile id="2" terrain=",,,2"/>
+  <tile id="3" terrain=",,2,"/>
+  <tile id="4" terrain="2,2,2,2"/>
+  <tile id="5" terrain=",1,,"/>
+  <tile id="6" terrain="1,,,"/>
+  <tile id="7" terrain=",2,,"/>
+  <tile id="8" terrain="2,,,"/>
+  <tile id="9" terrain="0,0,0,0"/>
+ </tileset>
+ <layer name="Kachelebene 1" width="34" height="41">
+  <data encoding="base64" compression="zlib">
+   eJztmMkShDAIROMy4zrj//+t8RZTGCKBJJYc+mbBE6mmy9kYM3tqrBZmtUAfTD+rD7P+yqEcyiHK8bVaI9Q7fTrk2YHAQZkb5X2VQzlilXJbJ4djTKjTGhmvoHhLjRyYF3HK9UCfI+fO+32fwsGRVaFsepeDY4+xurVyQF40BepvkRxY3Vr9oyQHlr36mzWhb8WR1aT2NMVvlCO8P7F5XTKrQ16U4y5BNwfKY5T/HBI7U+pmK8eZw/fPt8+jJMfhbVceJu1ZoZlwzGAHJKkutw==
+  </data>
+ </layer>
+</map>

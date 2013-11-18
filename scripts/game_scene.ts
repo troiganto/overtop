@@ -23,8 +23,8 @@ module Overtop {
      */
     preload(): void
     {
-      game.load.tilemap("tilemap", "assets/maps/testmap.json", null, Phaser.Tilemap.TILED_JSON);
-      game.load.tileset("tileset", "assets/maps/tileset.png", 16,16,-1,0,0);
+      game.load.tilemap("tilemap", "assets/maps/level.json", null, Phaser.Tilemap.TILED_JSON);
+      game.load.tileset("tileset", "assets/tilesets/minimal.png", 32,32,-1,0,1);
     }
     
     /**
