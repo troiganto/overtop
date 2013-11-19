@@ -1,3 +1,9 @@
+
+var oldout = process.stdout.write;
+process.stdout.write = function(msg) {
+  oldout.call(this, msg.replace('\x07', ''));
+};
+
 module.exports = function(grunt) {
 
   // Project configuration.
